@@ -21,7 +21,9 @@ def sorter(edit_with, copy_with):
         open_list_without_n = [line.rstrip('\n') for line in open_list_with_n]
 
     sorter_list = sorted(open_list_without_n)
-    c = input("Введите название файла, котрое будет после сортировки:")
+    c = input("Введите название файла, котрое будет после сортировки (Enter для default):")
+    if c =="" or c==" " or c == "\n":
+        c = "After_sort_text"
     new_file = open(f'{copy_with}{c}.txt', "+w")
 
     for u in range(len(sorter_list)):
