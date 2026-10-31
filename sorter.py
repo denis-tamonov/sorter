@@ -26,7 +26,7 @@ def sorter(edit_with, copy_with):
 
     for u in range(len(sorter_list)):
          new_file.write(sorter_list[u] + '\n')
-    print(f"Готово! Файл сохранен в: {copy_with}")
+    print(f"Готово! Файл {c} сохранен в: {copy_with}")
     return new_file
 
 
